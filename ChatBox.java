@@ -28,7 +28,7 @@ public class ChatBox extends Words{
 			resp.toLowerCase();
 			resp.trim();
 			if(resp.contains("."))
-				resp.replace(".", "");
+				resp = resp.replace(".", "");
 			int count = 0;
 			while(!resp.equals("quit") && count!=10){//whichever comes first 10 plays or quit
 				answer = "";
@@ -39,7 +39,7 @@ public class ChatBox extends Words{
 				resp.toLowerCase();
 				resp.trim();			
 				if(resp.contains("."))
-					resp.replace(".", "");
+					resp = resp.replace(".", "");
 			}//end while
 			play++;
 		}//end while
